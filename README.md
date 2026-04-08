@@ -11,7 +11,7 @@
 - **🌬️ Interactive Breathing Guide**: A non-blocking, fluid CSS-animated breathing assistant to help users ground themselves during high stress.
 - **🆘 Professional Crisis Support**: A dedicated directory of Pakistani mental helplines (Umang, Taskeen, Rozan) built directly into the app.
 - **☁️ Emotional Word Clouds**: Visualizes your thoughts to help identify recurring stressors and patterns in your day.
-- **📜 Smart History**: Keeps a session-based log of your previous reflections and analysis results.
+- **📜 Smart History**: Keeps a persistent database log of your past reflections and tracks your wellbeing trends over time, stored completely securely on your device.
 
 ---
 
@@ -20,7 +20,7 @@
 - **Machine Learning**: 
   - `Scikit-learn` (Multinomial Naive Bayes & Linear Regression)
   - `Joblib` (Model Persistence)
-- **Data Engineering**: `Pandas`, `CSV`
+- **Data Engineering**: `Pandas`, `CSV`, `SQLite3` (Database)
 - **Visualization**: `Matplotlib`, `WordCloud`
 - **Styling**: Custom CSS for premium glassmorphism effect.
 
@@ -37,7 +37,7 @@ cd Samsung-Final-Project
 ### 2. Install Dependencies
 Make sure you have Python installed, then run:
 ```bash
-pip install streamlit joblib wordcloud matplotlib pandas scikit-learn
+pip install -r requirements.txt
 ```
 
 ### 3. Start the Application
