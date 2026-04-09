@@ -22,6 +22,7 @@ st.set_page_config(page_title="ScreenShield AI", page_icon="🛡️", layout="ce
 # ─────────────────────────────────────────────
 st.markdown("""
 <style>
+    /* ── MAIN AREA ────────────────────────────────────── */
     .stTextArea textarea {
         border-radius: 12px;
         border: 1px solid #e0e6ed;
@@ -35,35 +36,85 @@ st.markdown("""
     }
     [data-testid="stDeployButton"] { display: none !important; }
     footer { visibility: hidden; }
+    h1, h2, h3 { color: #0A2540; font-family: 'Inter', sans-serif; }
 
+    /* ── SIDEBAR BACKGROUND ───────────────────────────── */
+    /* Deep navy gradient so everything inside is on a rich dark base */
+    section[data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #0A2540 0%, #0d2d4a 60%, #112240 100%) !important;
+    }
     section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"] {
         padding-top: 0rem !important;
         margin-top: -3.5rem !important;
     }
+
+    /* ── SIDEBAR — NEW JOURNAL BUTTON (primary) ───────── */
     div[data-testid="stSidebar"] .stButton button[kind="primary"] {
-        background-color: #0A2540 !important;
+        background: linear-gradient(135deg, #1565C0, #0288D1) !important;
         color: white !important;
-        border: 1px solid rgba(255,255,255,0.1) !important;
+        border: none !important;
         padding: 10px !important;
         margin-top: 5px !important;
-    }
-    .st-emotion-cache-12w0qpk { padding: 0.5rem 1rem !important; }
-    div[data-testid="stSidebarUserContent"] button {
-        background-color: transparent !important;
-        border: none !important;
-        text-align: left !important;
-        padding: 0.8rem !important;
-        margin-bottom: 2px !important;
         border-radius: 10px !important;
-        color: #333 !important;
+        font-size: 0.95rem !important;
+        letter-spacing: 0.3px !important;
+        box-shadow: 0 2px 8px rgba(2, 136, 209, 0.35) !important;
+    }
+    div[data-testid="stSidebar"] .stButton button[kind="primary"]:hover {
+        background: linear-gradient(135deg, #1976D2, #039BE5) !important;
+        box-shadow: 0 4px 14px rgba(2, 136, 209, 0.5) !important;
+    }
+
+    /* ── SIDEBAR — HISTORY ENTRY BUTTONS ──────────────── */
+    /* Light text on dark background — the core fix */
+    div[data-testid="stSidebarUserContent"] button {
+        background-color: rgba(255, 255, 255, 0.06) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        text-align: left !important;
+        padding: 0.75rem 0.9rem !important;
+        margin-bottom: 5px !important;
+        border-radius: 10px !important;
+        color: #CBD5E1 !important;
         width: 100% !important;
+        font-size: 0.82rem !important;
+        transition: all 0.2s ease !important;
     }
     div[data-testid="stSidebarUserContent"] button:hover {
-        background-color: #f0f2f6 !important;
+        background-color: rgba(255, 255, 255, 0.13) !important;
+        border-color: rgba(255, 255, 255, 0.2) !important;
+        color: #ffffff !important;
     }
-    h1, h2, h3 { color: #0A2540; font-family: 'Inter', sans-serif; }
 
-    /* Word counter styling */
+    /* ── SIDEBAR — CAPTION / LABEL TEXT ──────────────── */
+    section[data-testid="stSidebar"] .stCaption,
+    section[data-testid="stSidebar"] small,
+    section[data-testid="stSidebar"] p {
+        color: #90A4AE !important;
+        font-size: 0.78rem !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    /* ── SIDEBAR — DIVIDER LINE ───────────────────────── */
+    section[data-testid="stSidebar"] hr {
+        border-color: rgba(255,255,255,0.1) !important;
+        margin: 8px 0 !important;
+    }
+
+    /* ── SIDEBAR — INFO BOX (empty state) ────────────── */
+    section[data-testid="stSidebar"] .stAlert {
+        background-color: rgba(255,255,255,0.07) !important;
+        border: 1px solid rgba(255,255,255,0.1) !important;
+        color: #90A4AE !important;
+        border-radius: 10px !important;
+    }
+
+    /* ── SIDEBAR — TITLE TEXT ─────────────────────────── */
+    section[data-testid="stSidebar"] h2 {
+        color: #ffffff !important;
+        font-family: 'Inter', sans-serif !important;
+    }
+
+    /* ── WORD COUNTER ─────────────────────────────────── */
     .word-counter {
         font-size: 0.8rem;
         color: #888;
