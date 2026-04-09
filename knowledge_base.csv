@@ -1,71 +1,46 @@
-trigger,suggestion
-exam,Take 25-minute study sessions followed by 5-minute breaks (Pomodoro technique)
-scrolling,Put your phone in another room for at least 1 hour and go for a short walk
-phone,Limit phone use to 30 minutes after study time
-future,Write down 3 things you are grateful for right now
-family,Talk to one trusted family member about how you feel
-pressure,Take 3 deep breaths and remind yourself that you are doing your best
-anxious,Do 4-7-8 breathing exercise
-hopeless,Remember small progress is still progress
-stress,Take a 10-minute break drink water and stretch
-regret,Focus on what you can control today
-load shedding,Make a flexible study schedule that works during power cuts
-comparison,Stop comparing yourself with others on social media
-guilt,Be kind to yourself
-motivation,Recall why you started studying
-overwhelmed,Break big tasks into small parts
-lonely,Talk to a friend or pray
-tired,Take a short power nap of 15 minutes
-fear,Write down your fears and one positive action
-board exam,Revise one chapter daily
-tuition,Balance tuition and self-study
-prayer,Take 5 minutes for prayer or quiet reflection
-distracted,Use a physical timer and put your phone in another room entirely.
-social media,Delete distracting apps for a 24-hour dopamine reset.
-university,Focus on one application task at a time to avoid feeling overwhelmed.
-career,Map out your skills and identify one small step you can take today.
-scared,Visualize a positive outcome and focus on your breathing for 2 minutes.
-grades,Remind yourself that your worth is not defined by a single exam result.
-sleep,Turn off all digital screens at least 45 minutes before you plan to sleep.
-procrastination,Use the 5-second rule: count backwards from 5 and just start the task.
-burnout,Take a complete day off from all academic and digital responsibilities.
-competitive,Focus on your own progress rather than looking at what others are doing.
-sad,Listen to an uplifting podcast or talk to a supportive friend immediately.
-loneliness,Join a study group or visit a library to be around other productive people.
-unprepared,Identify the highest priority topic and master it today to build confidence.
-parents,Have an honest conversation about your stress levels with your guardians.
-results,Plan a small reward for yourself regardless of what the final score is.
-tiredness,Drink more water and ensure you are getting at least 7 hours of sleep.
-foggy,Go outdoors for 10 minutes to reset your mental clarity and focus.
-failure,Remember that every successful person has faced setbacks before winning.
-toxic,Distance yourself from negative influences for the sake of your peace.
-uncertainty,Focus on today's goals and let the future reveal itself step by step.
-academic,Break your entire syllabus into tiny bite-sized daily chunks.
-focus,Try listening to binary beats or lo-fi music for better concentration.
-peace,Read one page of a book that inspires you or spend time in nature.
-motivation,Write down your 'Why' and place it on your study desk for daily inspiration.
-+entrance,Focus on solving past papers under timed conditions to build exam confidence.
-+admission,Research the specific requirements of your target university to feel more in control.
-+meditation,Practice mindfulness for 5 minutes daily to reduce baseline anxiety levels.
-+yoga,Incorporate light yoga stretches to release physical tension from long study hours.
-+revision,Create active recall flashcards to make your revision more engaging and effective.
-+assignment,Finish the smallest part of the assignment first to build immediate momentum.
-+deadline,Start working on tasks as soon as they are assigned to avoid last-minute stress.
-+grades,Seek guidance from a teacher to identify specific areas for your improvement.
-+friends,Plan a phone-free outing with friends to recharge your social energy properly.
-+hobby,Spend 15 minutes on a creative hobby to balance your academic life.
-+exercise,A quick 15-minute home workout can significantly boost your mood and focus.
-+water,Keep a water bottle on your desk and stay hydrated for better brain function.
-+diet,Avoid excessive caffeine and sugar to prevent energy crashes during studies.
-+notes,Organize your study material neatly to reduce visual clutter and mental stress.
-+routine,Establish a morning routine that makes you feel powerful and in control.
-+evening,Unwind with a non-digital activity like reading or a warm shower at night.
-+apps,Use website blockers on your laptop to stay focused during research study time.
-+mentality,Adopt a growth mindset by seeing challenges as opportunities to learn.
-+confidence,List your past 3 accomplishments to remind yourself of your capabilities.
-+support,Don't hesitate to reach out to a professional counselor if stress feels heavy.
-+grounding,Use the 5-4-3-2-1 technique to pull yourself into the present moment.
-+discipline,Remember that discipline is choosing between what you want now and later.
-+habits,Replace one negative digital habit with a positive offline habit each week.
-+gratitude,End your day by writing down 3 wins, no matter how small they are.
-+happiness,Spend time doing something that makes you smile without checking your phone.
+mood,age_group,suggestion_text
+High,15-25,Talk to a trusted friend or teacher about what is weighing on your mind today.
+High,15-25,Step away from your phone and spend 10 minutes outside in fresh air or sunlight.
+High,15-25,Write down three things that are within your control right now and focus only on those.
+High,15-25,Remind yourself that exam results do not define your worth as a person.
+High,15-25,Take a short break from social media today and do one thing you genuinely enjoy.
+High,26-40,Share how you are feeling with a spouse, sibling, or close friend you trust.
+High,26-40,Take a 15-minute walk away from your desk and breathe slowly during it.
+High,26-40,Write down the single most important task for today and ignore everything else for now.
+High,26-40,Remember that it is okay to say no to extra responsibilities when you are overwhelmed.
+High,26-40,Consider speaking to a counselor or mental health professional about what you are carrying.
+High,41-65,Talk to someone you trust in your family about how you have been feeling lately.
+High,41-65,Take a short rest and allow yourself to pause without feeling guilty about it.
+High,41-65,Focus on one small positive thing you can do today rather than the full picture.
+High,41-65,Practice slow and steady breathing for five minutes in a quiet place.
+High,41-65,Remember that seeking help is a sign of strength and wisdom not weakness.
+Medium,15-25,Take a 10-minute break from studying and drink a full glass of water.
+Medium,15-25,Call or message one friend just to talk and take your mind off stress.
+Medium,15-25,Break your remaining tasks into very small steps and do just one at a time.
+Medium,15-25,Avoid comparing your progress to others on social media — everyone moves at their own pace.
+Medium,15-25,Get at least 7 to 8 hours of sleep tonight to reset your mind.
+Medium,26-40,Block 20 minutes in your day just for yourself — no work, no phone, just rest.
+Medium,26-40,Write down what is stressing you most and identify one action you can take today.
+Medium,26-40,Reach out to a colleague or friend for a brief conversation to lighten your mood.
+Medium,26-40,Prioritize your most important task first thing tomorrow and leave smaller things for later.
+Medium,26-40,Cook or eat a proper meal today — physical nourishment supports emotional resilience.
+Medium,41-65,Spend time in a calm activity you enjoy — reading, gardening, or prayer.
+Medium,41-65,Share a simple meal or tea with a family member and let yourself relax.
+Medium,41-65,Take things one day at a time and acknowledge what you have already managed well.
+Medium,41-65,A short afternoon rest can help restore both physical and emotional energy.
+Medium,41-65,Connect with a sibling or an old friend — social warmth reduces mental tension.
+Low,15-25,Great job taking care of yourself — keep maintaining this positive routine.
+Low,15-25,Use this good energy to plan ahead for an upcoming task or goal you care about.
+Low,15-25,Share your positivity with a friend who might be having a harder time today.
+Low,15-25,Take a moment to write down what made today feel good so you can revisit it later.
+Low,15-25,Stay consistent with your sleep and study habits — stability protects your wellbeing.
+Low,26-40,You are in a good space today — use this clarity to tackle something you have been putting off.
+Low,26-40,Appreciate the small wins from today and acknowledge your own efforts.
+Low,26-40,Check in with a colleague or loved one — your positive energy can uplift others too.
+Low,26-40,Use this calm moment to plan your week ahead with a clear and relaxed mind.
+Low,26-40,A short evening walk or quiet time will help you carry this good mood into tomorrow.
+Low,41-65,Alhamdulillah for a peaceful day — take a moment of gratitude for what is going well.
+Low,41-65,Spend quality time with your family this evening and enjoy the calm.
+Low,41-65,This is a good day to reflect on how far you have come and feel proud of it.
+Low,41-65,Share your good mood with those around you — a kind word goes a long way.
+Low,41-65,Continue the habits that brought you peace today and build on them tomorrow.
