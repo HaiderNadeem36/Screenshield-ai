@@ -22,110 +22,69 @@ st.set_page_config(page_title="ScreenShield AI", page_icon="🛡️", layout="ce
 # ─────────────────────────────────────────────
 st.markdown("""
 <style>
-    /* ── MAIN AREA ────────────────────────────────────── */
-    .stTextArea textarea {
-        border-radius: 12px;
-        border: 1px solid #e0e6ed;
-        padding: 15px;
-        font-size: 1.05rem;
-    }
-    .stButton>button {
-        border-radius: 8px;
-        font-weight: bold;
-        transition: all 0.2s ease;
-    }
-    [data-testid="stDeployButton"] { display: none !important; }
-    footer { visibility: hidden; }
-    h1, h2, h3 { color: #0A2540; font-family: 'Inter', sans-serif; }
 
-    /* ── SIDEBAR BACKGROUND ───────────────────────────── */
-    /* Deep navy gradient so everything inside is on a rich dark base */
-    section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0A2540 0%, #0d2d4a 60%, #112240 100%) !important;
-    }
-    section[data-testid="stSidebar"] div[data-testid="stSidebarUserContent"] {
-        padding-top: 0rem !important;
-        margin-top: -3.5rem !important;
-    }
+/* Sidebar main background */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0A2540 0%, #071826 100%);
+    color: white;
+}
 
-    /* ── SIDEBAR — NEW JOURNAL BUTTON (primary) ───────── */
-    div[data-testid="stSidebar"] .stButton button[kind="primary"] {
-        background: linear-gradient(135deg, #1565C0, #0288D1) !important;
-        color: white !important;
-        border: none !important;
-        padding: 10px !important;
-        margin-top: 5px !important;
-        border-radius: 10px !important;
-        font-size: 0.95rem !important;
-        letter-spacing: 0.3px !important;
-        box-shadow: 0 2px 8px rgba(2, 136, 209, 0.35) !important;
-    }
-    div[data-testid="stSidebar"] .stButton button[kind="primary"]:hover {
-        background: linear-gradient(135deg, #1976D2, #039BE5) !important;
-        box-shadow: 0 4px 14px rgba(2, 136, 209, 0.5) !important;
-    }
+/* Sidebar buttons (history items) */
+div[data-testid="stSidebarUserContent"] button {
+    background-color: rgba(255,255,255,0.05) !important;
+    border: none !important;
+    text-align: left !important;
+    padding: 0.8rem !important;
+    margin-bottom: 6px !important;
+    border-radius: 10px !important;
+    color: #E3F2FD !important;   /* LIGHT TEXT ✅ */
+    width: 100% !important;
+    font-size: 0.95rem;
+}
 
-    /* ── SIDEBAR — HISTORY ENTRY BUTTONS ──────────────── */
-    /* Light text on dark background — the core fix */
-    div[data-testid="stSidebarUserContent"] button {
-        background-color: rgba(255, 255, 255, 0.06) !important;
-        border: 1px solid rgba(255, 255, 255, 0.08) !important;
-        text-align: left !important;
-        padding: 0.75rem 0.9rem !important;
-        margin-bottom: 5px !important;
-        border-radius: 10px !important;
-        color: #CBD5E1 !important;
-        width: 100% !important;
-        font-size: 0.82rem !important;
-        transition: all 0.2s ease !important;
-    }
-    div[data-testid="stSidebarUserContent"] button:hover {
-        background-color: rgba(255, 255, 255, 0.13) !important;
-        border-color: rgba(255, 255, 255, 0.2) !important;
-        color: #ffffff !important;
-    }
+/* Hover effect */
+div[data-testid="stSidebarUserContent"] button:hover {
+    background: linear-gradient(90deg, #1E88E5, #42A5F5) !important;
+    color: white !important;
+    transform: translateX(3px);
+    transition: 0.2s ease;
+}
 
-    /* ── SIDEBAR — CAPTION / LABEL TEXT ──────────────── */
-    section[data-testid="stSidebar"] .stCaption,
-    section[data-testid="stSidebar"] small,
-    section[data-testid="stSidebar"] p {
-        color: #90A4AE !important;
-        font-size: 0.78rem !important;
-        letter-spacing: 0.5px !important;
-    }
+/* Active / selected feel */
+div[data-testid="stSidebarUserContent"] button:focus {
+    background-color: #1565C0 !important;
+    color: white !important;
+}
 
-    /* ── SIDEBAR — DIVIDER LINE ───────────────────────── */
-    section[data-testid="stSidebar"] hr {
-        border-color: rgba(255,255,255,0.1) !important;
-        margin: 8px 0 !important;
-    }
+/* Sidebar headings */
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #BBDEFB !important;
+}
 
-    /* ── SIDEBAR — INFO BOX (empty state) ────────────── */
-    section[data-testid="stSidebar"] .stAlert {
-        background-color: rgba(255,255,255,0.07) !important;
-        border: 1px solid rgba(255,255,255,0.1) !important;
-        color: #90A4AE !important;
-        border-radius: 10px !important;
-    }
+/* Divider line */
+section[data-testid="stSidebar"] hr {
+    border-color: rgba(255,255,255,0.1);
+}
 
-    /* ── SIDEBAR — TITLE TEXT ─────────────────────────── */
-    section[data-testid="stSidebar"] h2 {
-        color: #ffffff !important;
-        font-family: 'Inter', sans-serif !important;
-    }
+/* New Journal button */
+div[data-testid="stSidebar"] .stButton button[kind="primary"] {
+    background: linear-gradient(90deg, #00C6FF, #0072FF) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+    font-weight: bold;
+}
 
-    /* ── WORD COUNTER ─────────────────────────────────── */
-    .word-counter {
-        font-size: 0.8rem;
-        color: #888;
-        text-align: right;
-        margin-top: -10px;
-        margin-bottom: 10px;
-    }
-    .word-counter.over { color: #e53935; }
+/* Improve contrast for icons/text */
+section[data-testid="stSidebar"] * {
+    color: #E3F2FD;
+}
+
 </style>
 """, unsafe_allow_html=True)
-
 
 # ─────────────────────────────────────────────
 # AGE GROUP REGISTRATION — ONE-TIME ON FIRST LAUNCH
